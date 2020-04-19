@@ -1,5 +1,6 @@
 html, body {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -12,28 +13,75 @@ html, body {
     padding: 0 15px;
 }
 
-#navbar {
+#header {
+    color: white;
     height: 60px;
     width: 100%;
     margin: 0;
     padding:0;
-    background: rgb(197, 255, 255);
+    background: rgb(116, 160, 255);
 }
-#navbar #logo {
+#header a {
+    color: white;
+    height: 60px;
+}
+#header #logo {
     float: left;
     line-height: 60px;
     font-size: 26px;
     font-weight: bold;
 }
-#navbar ul{
+#header ul{
     list-style: none;
     padding: 0;
     margin: 0;
+    height: 60px;
     float: right;
 }
-#navbar ul li {
+
+#header ul li {
     display: inline-block;
     height:60px;
-    padding: 0 24px;
+    background: rgba(161, 137, 137, 0);
+    padding: 0 0px;
     line-height: 60px;
+    transition: background-color 0.2s ease-in-out;
+}
+#header ul li a {
+    text-decoration: none;
+    display: flex;
+    padding: 0 24px;
+    width:100%;
+    align-items: center;
+
+}
+#header ul li:hover {
+    background: rgba(0,0,0,0.2);
+    transition: background-color 0.2s ease-in-out;
+}
+#header ul li svg {
+    background: red;
+    line-height: 60px;
+}
+
+#banner {
+    background: rgb(10, 0, 48);
+    height: 400px;
+}
+#banner #banner-text-container {
+    padding-top: 120px;
+}
+#banner .medium-text {
+    color: #dfdfff;
+    font-size: 36px;
+}
+#banner .big-text {
+    color: #efefff;
+    font-size: 56px;
+    font-weight: 900;
+}
+#banner .small-text {
+    margin-top: 0px;
+    color: #dedeee;
+    font-size: 22px;
 }
