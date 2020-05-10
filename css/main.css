@@ -47,6 +47,14 @@ html, body {
     line-height: 60px;
     transition: background-color 0.2s ease-in-out;
 }
+.active {
+    background: #6666ff !important;
+    transition: background-color 0.2s ease-in-out;
+}
+.active:hover {
+    background: #5555ee !important;
+    transition: background-color 0.2s ease-in-out;
+}
 #header ul li a {
     text-decoration: none;
     display: flex;
@@ -60,8 +68,8 @@ html, body {
     transition: background-color 0.2s ease-in-out;
 }
 #header ul li svg {
-    background: red;
     line-height: 60px;
+    margin-right: 5px;
 }
 
 #banner {
@@ -84,4 +92,68 @@ html, body {
     margin-top: 0px;
     color: #dedeee;
     font-size: 22px;
+}
+
+img {
+    width: 49%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-left: 3px;
+    border: none;
+    display: inline-block;
+}
+
+#footer {
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    background: #222233;
+    color: #ddddff;
+}
+
+#content {
+    min-height: 600px;
+}
+
+
+
+#todo {
+    width: 410px;
+    padding: 10px;
+    border: 1px #333344 solid;
+    border-radius: 2px;
+
+    font-size: 18px;
+}
+
+#todo .item {
+    background: #eeeedd;
+    border: 1px #444455 solid;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+
+#todo .checked {
+    color: gray;
+    text-decoration: line-through;
+}
+
+#todo .item .buttons {
+    width: 100%;
+}
+
+
+#todo input {
+    margin-top: 8px;
+    font-size: 18px;
+    display:inline-block;
+    width: 342px;
+}
+#todo button {
+    font-size: 18px;
+    display:inline-block;
+}
+.buttons button {
+    width: 50%;
 }
